@@ -11,6 +11,10 @@ import os
 
 import sys
 
+from dotenv import load_dotenv
+
+load_dotenv()
+
 activate_this = os.path.expanduser('~/site/venv/bin/activate_this.py')
 
 exec(open(activate_this).read(), {'__file__': activate_this})
